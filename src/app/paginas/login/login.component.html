@@ -1,0 +1,29 @@
+<div class="container">
+    <mat-card>
+      <mat-card-content>
+        <img src="../assets/imagenes/muni1.png" alt="Imagen de inicio de sesión">
+  
+        <form class="login-form">
+          <mat-form-field>
+            <input name="userApp" matInput placeholder="Usuario" [(ngModel)]="username">
+          </mat-form-field>
+  
+          <mat-form-field>
+            <input type="password" name="passwordApp" matInput placeholder="Contraseña" [(ngModel)]="password">
+          </mat-form-field>
+  
+          <span>
+            {{mensajeLogin}}
+          </span>
+  
+          <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+            <button (click)="btnLogin()" mat-raised-button style="background-color: #e09306; color: rgb(255, 255, 255); width: 48%;">Entrar</button>
+            <button (click)="limpiarCampos()" mat-raised-button color="warn" style="width: 48%;">Limpiar</button>
+          </div>
+        </form>
+        
+      <a class="registro-link" routerLink="/registro">Registrarse</a> 
+    </mat-card-content>
+  </mat-card>
+</div>
+  

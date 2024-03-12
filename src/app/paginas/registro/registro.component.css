@@ -1,0 +1,19 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgb(255, 199, 109), rgb(255, 174, 66), rgb(255, 135, 0));
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+mat-card {
+    margin: 5%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 1);
+}
+

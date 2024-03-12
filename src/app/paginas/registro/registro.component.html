@@ -1,0 +1,24 @@
+<div class="form-container">
+    <mat-card>
+      <mat-card-content>
+        <img src="../assets/imagenes/muni1.png" alt="Imagen de registro">
+  
+        <form class="login-form" (ngSubmit)="registrarNuevoUsuario()">
+          <mat-form-field>
+            <input name="newUsername" matInput placeholder="Nuevo Usuario" [(ngModel)]="newUser.username" required>
+          </mat-form-field>
+  
+          <mat-form-field>
+            <input type="password" name="newPassword" matInput placeholder="Nueva Contraseña" [(ngModel)]="newUser.password" required>
+          </mat-form-field>
+  
+          <span>
+            {{mensajeRegistro}}
+          </span>
+  
+          <button type="button" (click)="registrarNuevoUsuario()" mat-raised-button style="background-color: #42b72a; color: rgb(255, 255, 255); width: 50%;">Registrarse</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  

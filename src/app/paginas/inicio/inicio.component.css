@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgb(255, 199, 109), rgb(255, 174, 66), rgb(255, 135, 0));
+}
+
+.custom-toolbar {
+  position: fixed; 
+  top: 120px; 
+  width: 100%;
+  align-items: center;
+  background-color: #232222; 
+  z-index: 1000;
+  color: #fff;
+}
+
+/* etiquetas <a> en la barra de herramientas */
+.toolbar-link {
+  color: #fff !important; 
+  margin-right: 50px !important; 
+}
+
+.toolbar-link:hover {
+  color: #d28b07 !important; 
+}
+
+.toolbar-header {
+  position: absolute; 
+  top: 6%; 
+  left: 0; 
+  width: 100%; 
+  color: #2e2e2e; 
+  text-align: center; 
+  padding: 10px 0; 
+  font-size: 31px; 
+  font-weight:bold; 
+  z-index: 1000; 
+}
+
